@@ -1,0 +1,6 @@
+# GrabCut live demo - ENGR 6010
+# Tested on Python 3.9.6 (macOS system Python) with the versions in brackets.
+numpy>=1.23           # [2.0.2]
+opencv-python>=4.5    # [4.13.0]  provides cv2.grabCut
+matplotlib>=3.5       # [3.9.4]   animation, widgets and the GUI
+scikit-image>=0.19    # [0.24.0]  bundled sample photographs only
