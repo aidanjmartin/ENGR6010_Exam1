@@ -1,0 +1,5 @@
+# Q4 synthetic-data scripts. Tested on Python 3.9.6 (macOS system Python).
+numpy>=1.23
+opencv-python>=4.5
+matplotlib>=3.5
+scikit-learn>=1.0

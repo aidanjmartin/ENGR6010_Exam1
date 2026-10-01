@@ -216,3 +216,40 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- ENGR 6010 Exam 1 ---------------------------------------------------------
+# Credentials and robot identity: tokens, per-device keys, IP and serial numbers
+# live in untracked env files only.
+.env.*
+*.key
+*secret*
+*credentials*
+
+# Datasets and robot recordings
+data/
+datasets/
+dataset/
+recordings/
+*.bag
+*.db3
+*.mcap
+*.npz
+*.jsonl
+
+# Isaac Gym binaries and simulation checkpoints
+isaacgym/
+IsaacGym_Preview_*
+*.tar.gz
+logs/
+*.pt
+*.pth
+*.onnx
+
+# Raw video: commit short compressed clips or GIFs under 10 MB instead
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# macOS
+.DS_Store
