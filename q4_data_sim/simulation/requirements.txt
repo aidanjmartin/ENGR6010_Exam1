@@ -1,0 +1,18 @@
+# Q4 simulation environment: Python 3.8 (conda-forge). See LOG.md for the install order.
+# PyTorch with CUDA 12.1: pip install torch==2.3.1 torchvision==0.18.1 --index-url https://download.pytorch.org/whl/cu121
+torch==2.3.1
+torchvision==0.18.1
+rsl-rl @ git+https://github.com/leggedrobotics/rsl_rl@2ad79cf0caa85b91721abfe358105f869a784121
+# Isaac Gym Preview 4 is not on PyPI: download it from NVIDIA, then pip install -e isaacgym/python
+unitree_rl_gym @ git+https://github.com/unitreerobotics/unitree_rl_gym@276801e46c5d433564f24658bac64f254b7d2d4b
+# unitree_rl_gym pins numpy 1.20 (Isaac Gym uses np.float, removed in numpy 1.24).
+numpy==1.20.0
+# Pillow 10 needs numpy.typing.NDArray (numpy 1.21 and later); 9.5.0 works with numpy 1.20.
+pillow==9.5.0
+mujoco==3.2.3
+matplotlib==3.7.5
+tensorboard==2.14.0
+scipy==1.10.1
+imageio==2.35.1
+ninja==1.13.2
+pyyaml==6.0.3
