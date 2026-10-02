@@ -1,6 +1,6 @@
 # ENGR 6010 Exam 1
 
-Aidan J. Martin, ENGR 6010: AI in Robotics, Vanderbilt University, Fall 2026.
+Aidan J. Martin, ENGR 6010: AI in Robotics, Middle Tennessee State University, Fall 2026.
 
 This repository holds the four parts of Exam 1. Q1 is a review paper on five visual perception methods for robotics: color spaces, Gaussian pyramids, optical flow, GrabCut, and supervised learning. Q2 through Q4 form one technical note on the Unitree Go2 X quadruped. Q2 sets up the Unitree Python SDK and its examples. Q3 surveys five Go2 demo repositories and runs one of them. Q4 plans data collection from the robot, runs each of the five methods on synthetic data with exact ground truth, and runs the Go2 locomotion simulation from `unitree_rl_gym`. The code from three earlier reading assignments is included unchanged, and Q4 reuses it.
 
