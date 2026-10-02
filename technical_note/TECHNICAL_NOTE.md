@@ -1,6 +1,6 @@
 # Technical note: the Unitree Go2 X from SDK to simulation
 
-Aidan J. Martin, ENGR 6010: AI in Robotics, Vanderbilt University, Exam 1, Q2 to Q4. October 2, 2026.
+Aidan J. Martin, ENGR 6010: AI in Robotics, Middle Tennessee State University, Exam 1, Q2 to Q4. October 2, 2026.
 
 ## Summary
 
