@@ -221,6 +221,7 @@ __marimo__/
 # Credentials and robot identity: tokens, per-device keys, IP and serial numbers
 # live in untracked env files only.
 .env.*
+!.env.example
 *.key
 *secret*
 *credentials*

@@ -1,0 +1,51 @@
+# First 50 lines of 13273. The example parsed 577 LowState messages in a 3 s run. Every field reads 0 because no gamepad is attached to the simulator.
+WARNING: Please ensure there are no obstacles around the robot while running this example.
+1790962630.566996 [0]     python: selected interface "lo" is not multicast-capable: disabling multicast
+debug unitreeRemoteController: 
+Lx: 0.0
+Rx: 0.0
+Ry: 0.0
+Ly: 0.0
+L1: 0
+L2: 0
+R1: 0
+R2: 0
+A: 0
+B: 0
+X: 0
+Y: 0
+Up: 0
+Down: 0
+Left: 0
+Right: 0
+Select: 0
+F1: 0
+F3: 0
+Start: 0
+
+
+debug unitreeRemoteController: 
+Lx: 0.0
+Rx: 0.0
+Ry: 0.0
+Ly: 0.0
+L1: 0
+L2: 0
+R1: 0
+R2: 0
+A: 0
+B: 0
+X: 0
+Y: 0
+Up: 0
+Down: 0
+Left: 0
+Right: 0
+Select: 0
+F1: 0
+F3: 0
+Start: 0
+
+
+debug unitreeRemoteController: 
+Lx: 0.0

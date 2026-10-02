@@ -1,0 +1,10 @@
+WARNING: Please ensure there are no obstacles around the robot while running this example.
+Press Enter to continue...1790962603.502721 [0]     python: selected interface "lo" is not multicast-capable: disabling multicast
+[ClientStub] send request error. id: 101222537253054
+Traceback (most recent call last):
+  File "/home/aidan/go2_deps/unitree_sdk2_python/example/go2/low_level/go2_stand_example.py", line 168, in <module>
+    custom.Init()
+  File "/home/aidan/go2_deps/unitree_sdk2_python/example/go2/low_level/go2_stand_example.py", line 75, in Init
+    while result['name']:
+          ~~~~~~^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable

@@ -1,0 +1,5 @@
+WARNING: Please ensure there are no obstacles around the robot while running this example.
+1790962612.935460 [0]     python: selected interface "lo" is not multicast-capable: disabling multicast
+[RecurrentThread] target func raise exception: name=AttributeError, args=("'NoneType' object has no attribute 'motor_state'",)
+[RecurrentThread] target func raise exception: name=AttributeError, args=("'NoneType' object has no attribute 'motor_state'",)
+Done!

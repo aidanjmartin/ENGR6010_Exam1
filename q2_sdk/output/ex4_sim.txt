@@ -1,0 +1,5 @@
+pygame 2.6.1 (SDL 2.28.4, Python 3.11.16)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+1790962637.487963 [0]     python: selected interface "lo" is not multicast-capable: disabling multicast
+sim_go2: Go2 on DDS domain 0, interface lo, dt 0.005 s, 20.0 s
+sim_go2: 20.00 s simulated in 20.78 s wall time; body height start 0.446 m, end 0.077 m

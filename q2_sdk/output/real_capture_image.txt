@@ -1,0 +1,2 @@
+##################GetImageSample###################
+ImageName: ./img.jpg

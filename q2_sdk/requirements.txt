@@ -1,0 +1,9 @@
+# Q2 environment: Python 3.11 (conda-forge). Install CycloneDDS 0.10.x from source
+# first and set CYCLONEDDS_HOME; see LOG.md.
+cyclonedds==0.10.2
+unitree_sdk2py @ git+https://github.com/unitreerobotics/unitree_sdk2_python@814556d15970dd2ecf1c9984e845ca02ab07e206
+numpy==2.4.6
+opencv-python==5.0.0.93
+mujoco==3.14.0
+pygame==2.6.1
+pillow==12.3.0
