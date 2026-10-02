@@ -1,0 +1,34 @@
+connecting ...
+🕒 WebRTC connection        : 🟡 started       (16:11:16)
+🕒 Lidar Decoder            : 🧊 LibVoxelDecoder (16:11:16)
+🕒 Signaling State          : 🟡 have-local-offer (16:11:16)
+🕒 ICE Gathering State      : 🟡 gathering     (16:11:16)
+🕒 ICE Gathering State      : 🟢 complete      (16:11:16)
+🕒 LAN Signaling Method     : 🆕 con_notify (<GO2_IP>:9991) (16:11:16)
+🕒 ICE Connection State     : 🔵 checking      (16:11:16)
+🕒 Peer Connection State    : 🔵 connecting    (16:11:16)
+🕒 Signaling State          : 🟢 stable        (16:11:16)
+🕒 ICE Connection State     : 🟢 completed     (16:11:17)
+🕒 Peer Connection State    : 🟢 connected     (16:11:17)
+🕒 Data Channel Verification: ✅ OK            (16:11:17)
+connected after 0.5 s
+Video channel: on
+WARNING:aiortc.codecs.h264:H264Decoder() failed to decode, skipping package: [Errno 1094995529] Invalid data found when processing input: 'avcodec_send_packet()'
+WARNING:aiortc.codecs.h264:H264Decoder() failed to decode, skipping package: [Errno 1094995529] Invalid data found when processing input: 'avcodec_send_packet()'
+WARNING:aiortc.codecs.h264:H264Decoder() failed to decode, skipping package: [Errno 1094995529] Invalid data found when processing input: 'avcodec_send_packet()'
+WARNING:aiortc.codecs.h264:H264Decoder() failed to decode, skipping package: [Errno 1094995529] Invalid data found when processing input: 'avcodec_send_packet()'
+WARNING:aiortc.codecs.h264:H264Decoder() failed to decode, skipping package: [Errno 1094995529] Invalid data found when processing input: 'avcodec_send_packet()'
+WARNING:aiortc.codecs.h264:H264Decoder() failed to decode, skipping package: [Errno 1094995529] Invalid data found when processing input: 'avcodec_send_packet()'
+WARNING:aiortc.codecs.h264:H264Decoder() failed to decode, skipping package: [Errno 1094995529] Invalid data found when processing input: 'avcodec_send_packet()'
+WARNING:aiortc.codecs.h264:H264Decoder() failed to decode, skipping package: [Errno 1094995529] Invalid data found when processing input: 'avcodec_send_packet()'
+WARNING:aiortc.codecs.h264:H264Decoder() failed to decode, skipping package: [Errno 1094995529] Invalid data found when processing input: 'avcodec_send_packet()'
+🕒 Robot Connection Mode    : 📡 4G            (16:11:20)
+🕒 Signaling State          : ⚫ closed        (16:11:37)
+ERROR:root:Error in callback <function main.<locals>.on_video at 0x716ef21a31c0>: 
+🕒 ICE Connection State     : ⚫ closed        (16:11:37)
+🕒 Peer Connection State    : ⚫ closed        (16:11:37)
+🕒 WebRTC connection        : 🔴 disconnected  (16:11:37)
+recorded 20.0 s
+camera: 274 frames, 13.7 per second, 1280 x 720
+rt/lf/lowstate: 20 messages, 1.0 per second
+rt/lf/sportmodestate: 400 messages, 20.0 per second

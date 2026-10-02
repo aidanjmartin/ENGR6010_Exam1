@@ -1,0 +1,16 @@
+# Q3 environment: Python 3.10 (conda-forge). See LOG.md for the install order.
+# PyTorch with CUDA: pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0
+# Go2Py's laser scan calls mj_multiRay without the `normal` argument that MuJoCo 3.5.0 added.
+mujoco==3.4.0
+numpy==2.2.6
+scipy==1.15.3
+opencv-python==5.0.0.93
+matplotlib==3.10.9
+pillow==12.3.0
+pyyaml==6.0.3
+pygame==2.6.1
+nbconvert==7.17.1
+ipykernel==7.3.0
+Go2Py @ git+https://github.com/machines-in-motion/Go2Py@eff240b82b0ff6dae6ba5ee934a381f38fe64c0d
+unitree_webrtc_connect @ git+https://github.com/legion1581/unitree_webrtc_connect@e0abc5780761539eff89a382a79319e5cf6ad1f4
