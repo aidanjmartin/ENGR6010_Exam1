@@ -4,6 +4,8 @@ Aidan J. Martin, ENGR 6010: AI in Robotics, Vanderbilt University, Fall 2026.
 
 This repository holds the four parts of Exam 1. Q1 is a review paper on five visual perception methods for robotics: color spaces, Gaussian pyramids, optical flow, GrabCut, and supervised learning. Q2 through Q4 form one technical note on the Unitree Go2 X quadruped. Q2 sets up the Unitree Python SDK and its examples. Q3 surveys five Go2 demo repositories and runs one of them. Q4 plans data collection from the robot, runs each of the five methods on synthetic data with exact ground truth, and runs the Go2 locomotion simulation from `unitree_rl_gym`. The code from three earlier reading assignments is included unchanged, and Q4 reuses it.
 
+**Start here for Q2 to Q4:** [`technical_note/TECHNICAL_NOTE.md`](technical_note/TECHNICAL_NOTE.md), the technical note with every result and figure. The sections below say how to run each part.
+
 ## Layout
 
 ```
@@ -21,7 +23,7 @@ q4_data_sim/                 Q4
   synthetic/                 five synthetic-data scripts, shared helpers, LOG.md
   results/                   figures and SUMMARY.md, the collected result tables
   simulation/                unitree_rl_gym notes, LOG.md, plots, GIFs
-technical_note/              the Q2-Q4 technical note
+technical_note/              the Q2-Q4 technical note (TECHNICAL_NOTE.md)
 ```
 
 ## How to run
@@ -68,6 +70,8 @@ cd q2_sdk
 | `capture_image.py`, unchanged | real Go2 X, Ethernet | one 1920 x 1080 camera frame over DDS |
 | `wireless_controller.py`, Go2 message type | real Go2 X, Ethernet | about 26 `LowState` messages per second on `rt/lf/lowstate` |
 
+![The simulated Go2 lying, standing, holding and crouching](q2_sdk/output/ex2_stand_frames.png)
+
 The Go2 X answered the SDK's DDS requests over its wired network, which the Q3 survey did not expect. `sim_go2.py` runs unitree_mujoco's Python simulator with the settings the SDK examples expect, and records a GIF and a body-height CSV.
 
 ### Q3: Go2 demo applications
@@ -82,7 +86,11 @@ cd q3_apps
 ```
 
 - **Go2Py in MuJoCo:** every cell of `examples/02-MuJoCo-sim.ipynb` runs unchanged with MuJoCo 3.4.0 and a CUDA build of PyTorch. The executed notebook, camera image, point cloud and GIFs of its low-level and high-level loops are in `q3_apps/output/`.
+
+  ![Go2Py low-level and high-level loops in MuJoCo](q3_apps/output/go2py_frames.png)
 - **Real Go2 X over WebRTC:** with `unitree_webrtc_connect`, over the wired network, with no phone app. The robot uses the pre-1.1.15 handshake, so no per-device key is needed. A 20 s run received 1280 x 720 video at 13.7 frames per second, sport-mode state at 20 messages per second and low-level state at 1 per second.
+
+  ![Camera frames received over WebRTC from the real Go2 X](q3_apps/output/webrtc/camera_frames.jpg)
 
 ### Q4: synthetic data
 
@@ -125,6 +133,10 @@ cd q4_data_sim/simulation
 | mean episode reward | 0.00 at iteration 0, 22.53 at iteration 499 |
 | mean episode length | 997 of 1000 policy steps at iteration 499 |
 | playback at a commanded 1.0 m/s | 0.947 m/s measured over 100 robots, no falls |
+
+![Training curves over 500 iterations](q4_data_sim/simulation/results/training_curve.png)
+
+![The trained policy walking at a commanded 1.0 m/s](q4_data_sim/simulation/results/play_go2_vx1.gif)
 
 [`q4_data_sim/simulation/results/`](q4_data_sim/simulation/results/) holds the training curves and the playback GIF. Isaac Gym runs on Ubuntu 26.04 here, although NVIDIA lists only 18.04 and 20.04. `unitree_rl_gym` has no Go2 config or policy for its MuJoCo sim2sim path, so Isaac Gym is its only Go2 path.
 
